@@ -11,32 +11,39 @@
     <header class="navbar">
         <span>TATA STEEL</span>
         <nav class="nav-links">
-            <a href="Home">Home</a>
-             <a href="Areas">Areas</a>
-              <a href="Modules">Modules</a>
-               <a href="Contact">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#areas">Areas</a>
+            <a href="#modules">Modules</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     
 
-    <section class="hero">
+    
+
+    <section class="hero" id="home">
         <div class="hero-content">
             <p class="small-heading">Learning & Development</p>
             <h1>Empowering Excellence in<br>
                  Steel Making</h1>
             <p>Comprehensive training programs across MAP, OPN, FLP &amp; BBF 
                 for the Mechanical Department — building skills that forge the future.</p>
-                <div class="buttons">
+                <!-- <div class="buttons">
                     <button class="btn primary">Explore Areas</button>
                     <button class="btn secondary">View Modules</button>
-                </div>
+                </div> -->
+
+                <div class="buttons">
+  <a href="#areas" class="btn primary">Explore Areas</a>
+  <a href="#modules" class="btn secondary">View Modules</a>
+</div>
         </div>
     </section>
 
 
     
 
-<section class="stats-section">
+<section class="stats-section" id="home">
     <div class="container">
 
         <div class="stat-box">
@@ -64,7 +71,7 @@
 
 
 
-<section class="pillars-section">
+<section class="pillars-section" id="areas">
     <div class="pillars-container">
 
         <p class="subtitle">CORE PRODUCTION AREAS</p>
@@ -75,53 +82,23 @@
         </p>
     
 </section>
-        <!-- <div class="pillars-grid">
-
-            <div class="pillar-card">
-                <div class="icon blue">
-                    <i class="fa-regular fa-clock"></i>
-                </div>
-                <h3>MAP — Material & Aggregate Preparation</h3>
-                <span>Raw Material Handling</span>
-                <p> Raw material including crushing, screening, blending, and conveying systems. Covers stackers-reclaimers, crushes, vibrating screens, belt conveyors, and dust suppression equipment.</p>
-            </div>
-
-            <div class="pillar-card">
-                <h3>OPN — Operations</h3>
-                <span>Process Operations</span>
-            </div>
-
-            <div class="pillar-card">
-                <h3>MNT — Maintenance</h3>
-                <span>Equipment Maintenance</span>
-            </div>
-
-            <div class="pillar-card">
-                <h3>QCS — Quality Control System</h3>
-                <span>Quality Assurance</span>
-            </div> -->
-
-        <!-- </div>
-
-    </div> -->
-
+        
     
 
 
 <section class="conta">
 
   <!-- CARD 1 -->
-  <div class="card">
+  <div class="card" onclick="openMAP()">
     <div class="icon blue-blue">
       <i class="fa-solid fa-clock"></i>
     </div>
 
-    <h3>MAP — Material & Aggregate Preparation</h3>
+    <h3>MAP — Mechanical Assembly Practice</h3>
     <span class="tag blue">Raw Material Handling</span>
 
     <p>
-      Raw material preparation including crushing, screening,
-      blending and conveying systems.
+      Mechanical Assembly Practice focuses on developing hands-on skills in assembling and maintaining mechanical components. It includes understanding of tools, equipment, and techniques used in real industrial environments to ensure accuracy, safety, and efficiency.
     </p>
 
     <div class="chips">
@@ -133,7 +110,7 @@
   </div>
 
   <!-- CARD 2 -->
-  <div class="card">
+  <div class="card" onclick="openOPN()">
     <div class="icon orange-orange">
       <i class="fa-solid fa-lock"></i>
     </div>
@@ -142,7 +119,7 @@
     <span class="tag orange">Process Operations</span>
 
     <p>
-      Core operational processes covering maintenance and troubleshooting.
+      Focuses on understanding and performing industrial operations efficiently. It includes handling machines, monitoring processes, and ensuring smooth workflow with proper safety measures.
     </p>
 
     <div class="chips">
@@ -154,16 +131,16 @@
   </div>
 
   <!-- CARD 3 -->
-  <div class="card">
+  <div class="card" onclick="openFLP()">
     <div class="icon blue-blue">
       <i class="fa-solid fa-layer-group"></i>
     </div>
 
-    <h3>FLP — Flat Product</h3>
+    <h3>FLP — Fluid Power</h3>
     <span class="tag blue">Rolling & Finishing</span>
 
     <p>
-      Covers hot strip mill, cold rolling mill and finishing processes.
+      Covers the fundamentals of hydraulic and pneumatic systems used in industries. It includes understanding fluid flow, pressure control, and operation of components like pumps, valves, and actuators.
     </p>
 
     <div class="chips">
@@ -175,16 +152,16 @@
   </div>
 
   <!-- CARD 4 -->
-  <div class="card">
+  <div class="card" onclick="openBBF()">
     <div class="icon orange-orange">
       <i class="fa-solid fa-crosshairs"></i>
     </div>
 
-    <h3>BBF — Blast Furnace</h3>
+    <h3>BBF — Basic Bench Fitting</h3>
     <span class="tag orange">Iron Making</span>
 
     <p>
-      Blast furnace operations including cooling and gas systems.
+      Provides hands-on training in basic fitting operations such as cutting, filing, drilling, and assembling components. It helps in developing precision, accuracy, and proper use of hand tools.
     </p>
 
     <div class="chips">
@@ -194,7 +171,172 @@
       <span>Cooling Systems</span>
     </div>
   </div>
+</section>
 
+
+<section class="pi" id="modules">
+    <div class="pi-con">
+
+        <p class="sub">Training Programs</p>
+        <h2 class="ti">Learning Modules</h2>
+        <p class="des">
+            Structured training covering fundamentals to advanced mechanical maintenance across <br>
+             all production areas.
+        </p>
+    
+</section>
+
+
+
+<!-- <section class="pi">
+
+  <div class="top-row">
+    <div class="menu">
+      <span class="item all">
+        ALL
+        <div class="tooltip">MAP + OPN + FLP + BBF (All details)</div>
+      </span>
+
+      <span class="item">
+        MAP
+        <div class="tooltip">MAP details here</div>
+      </span>
+
+      <span class="item">
+        OPN
+        <div class="tooltip">OPN details here</div>
+      </span>
+
+      <span class="item">
+        FLP
+        <div class="tooltip">FLP details here</div>
+      </span>
+
+      <span class="item">
+        BBF
+        <div class="tooltip">BBF details here</div>
+      </span>
+    </div>
+  </div>
+</section> -->
+
+<section class="modules">
+
+  <div class="tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="map">MAP</button>
+    <button class="tab" data-filter="opn">OPN</button>
+    <button class="tab" data-filter="flp">FLP</button>
+    <button class="tab" data-filter="bbf">BBF</button>
+    <div class="slider"></div>
+  </div>
+
+  <div class="cards">
+    <!--card1-->
+    <div class="card map">
+      <div class="card-top">
+        <span class="category">MAP</span>
+        <span class="level green">Foundation</span>
+        </div>
+      <h3>Belt Conveyor Maintenance</h3>
+      <p>Alignment, splicing, idler replacement</p>
+      <div class="time"> 🕒12 hrs</div>
+    </div>
+
+     <div class="card map">
+      <div class="card-top">
+        <span class="category">MAP</span>
+        <span class="level green">Foundation</span>
+        </div>
+      
+      <h3>Stacker Reclaimer</h3>
+      <p>Slew, luff, travel mechanisms</p>
+      <div class="time"> 🕒 8 hrs</div>
+    </div>
+    <!--card2-->
+    <div class="card opn">
+      <div class="card-top">
+        <span class="category">OPN</span>
+        <span class="level blue">Foundation</span>
+        </div>
+      
+      <h3>Hydraulic Systems</h3>
+      <p>Valve configurations</p>
+      <div class="time"> 🕒10 hrs</div>
+    </div>
+
+    <div class="card opn">
+      <div class="card-top">
+        <span class="category">OPN</span>
+        <span class="level blue">Foundation</span>
+        </div>
+      
+      <h3>Pump Maintenance</h3>
+      <p>Centrifugal and gear pump</p>
+      <div class="time"> 🕒15 hrs</div>
+    </div>
+     <!--card3-->
+    <div class="card flp">
+      <div class="card-top">
+        <span class="category">FLP</span>
+        <span class="level red">Foundation</span>
+        </div>
+      
+      <h3>Crusher & Screen</h3>
+      <p>Jaw and cone crusher</p>
+      <div class="time"> 🕒11 hrs</div>
+    </div>
+     <!--card4-->
+    <div class="card bbf">
+      <div class="card-top">
+        <span class="category">BBF</span>
+        <span class="level purple">Foundation</span>
+        </div>
+      
+      <h3>Pneumatic Systems</h3>
+      <p>Air preparation units</p>
+      <div class="time"> 🕒9 hrs</div>
+    </div>
+     
+  </div>
+
+</section>
+
+
+
+
+<section class="contact" id="contact">
+<div class="icon-box"></div>
+
+<h1>Get In Touch</h1>
+
+<p>
+For training schedules, module details, or enrollment queries,
+reach out to the L&D team of Mechanical Department.
+</p>
+
+<div class="contact-info">
+<span>Ext: 4200</span>
+<span>mech.lnd@tatasteel.com</span>
+<span>Jamshedpur Works</span>
+</div>
+</section>
+
+<footer>
+<div class="footer-left">
+<div class="logo-box">T</div>
+<span>Tata Steel — Mechanical L&D</span>
+</div>
+
+<div>
+© 2024 Tata Steel Limited. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>
+
+<script src="script.js"></script>
 
 
 </body>
